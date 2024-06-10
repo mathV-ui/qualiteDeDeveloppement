@@ -1,0 +1,13 @@
+6Ajout de 25 voitures avec un prix de 10000 chacune...
+3Prix total attendu (avec remise maximale) : 230000
+Prix total calculé : 230000
+9Tester le calcul du prix sans aucune voiture ajoutée...
+5Exception ArithmeticException attendue et capturée.
+Voitures ajoutées :
+Toyota - 15000
+Honda - 20000
+Ford - 18000
+BMW - 25000
+Audi - 30000
+Prix total attendu : 102600
+Prix total calculé : 102600

@@ -28,4 +28,12 @@ public class VoitureTest {
         voiture.setPrix(25000);
         assertEquals(25000, voiture.getPrix());
     }
+
+
+    @Test
+    public void testToString() {
+        Voiture voiture = new Voiture("Toyota", 20000);
+        String expected = "Voiture{marque='Toyota', prix=20000.0}";
+        assertEquals(expected, voiture.toString());
+    }
 }

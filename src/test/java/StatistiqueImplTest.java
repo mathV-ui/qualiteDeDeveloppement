@@ -61,4 +61,11 @@ class StatistiqueImplTest {
 
         assertEquals(expectedPrixTotal, prixTotal);
     }
+
+    @Test
+    void testAjouterVoitureNull() {
+        Statistique statistique = new StatistiqueImpl();
+        statistique.ajouter(null);
+        assertThrows(ArithmeticException.class, statistique::prix);
+    }
 }
