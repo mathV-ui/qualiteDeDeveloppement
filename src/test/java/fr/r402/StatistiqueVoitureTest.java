@@ -1,13 +1,14 @@
+package fr.r402;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 
-class StatistiqueImplTest {
+class StatistiqueVoitureTest {
 
     @Test
     void testAjouterEtPrix() {
-        Statistique statistique = new StatistiqueImpl();
+        Statistique statistique = new StatistiqueVoiture();
         Voiture voiture1 = new Voiture("Toyota", 15000);
         Voiture voiture2 = new Voiture("Honda", 20000);
         Voiture voiture3 = new Voiture("Ford", 18000);
@@ -38,7 +39,7 @@ class StatistiqueImplTest {
 
     @Test
     void testPrixSansVoiture() {
-        Statistique statistique = new StatistiqueImpl();
+        Statistique statistique = new StatistiqueVoiture();
         System.out.println("Tester le calcul du prix sans aucune voiture ajoutée...");
         assertThrows(ArithmeticException.class, statistique::prix);
         System.out.println("Exception ArithmeticException attendue et capturée.");
@@ -46,7 +47,7 @@ class StatistiqueImplTest {
 
     @Test
     void testPrixAvecRemiseMaximale() {
-        Statistique statistique = new StatistiqueImpl();
+        Statistique statistique = new StatistiqueVoiture();
 
         System.out.println("Ajout de 25 voitures avec un prix de 10000 chacune...");
         for (int i = 0; i < 25; i++) {
@@ -64,7 +65,7 @@ class StatistiqueImplTest {
 
     @Test
     void testAjouterVoitureNull() {
-        Statistique statistique = new StatistiqueImpl();
+        Statistique statistique = new StatistiqueVoiture();
         statistique.ajouter(null);
         assertThrows(ArithmeticException.class, statistique::prix);
     }
