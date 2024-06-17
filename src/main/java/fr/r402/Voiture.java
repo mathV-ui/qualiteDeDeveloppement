@@ -1,3 +1,4 @@
+package fr.r402;
 
 public class Voiture {
 
@@ -29,7 +30,7 @@ public class Voiture {
     }
 
     public String toString() {
-        return "Voiture{" +
+        return "fr.r402.Voiture{" +
                 "marque='" + marque + '\'' +
                 ", prix=" + prix +
                 '}';
